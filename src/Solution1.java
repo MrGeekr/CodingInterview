@@ -10,6 +10,7 @@ public class Solution1 {
         if (str==null||str.length()==0){
             return str;
         }
+        //取模，考虑n大于字符串的长度的情况
         int left=n%str.length();
         return str.substring(left,str.length())+str.substring(0,left);
 
