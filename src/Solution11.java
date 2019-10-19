@@ -7,6 +7,7 @@
  */
 public class Solution11 {
     public int JumpFloorII(int target) {
+        //总结出数学规律
         return (int) Math.pow(2,target-1);
     }
 }
