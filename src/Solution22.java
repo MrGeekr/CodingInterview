@@ -16,9 +16,11 @@ public class Solution22 {
         if (root.left==null&&root.right==null){
          return;
         }
+        //左右结点交换
         TreeNode temp=root.left;
         root.left=root.right;
         root.right=temp;
+        //再递归遍历左右子树
         if (root.left!=null){
             Mirror(root.left);
         }
